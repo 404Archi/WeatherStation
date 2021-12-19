@@ -1,0 +1,39 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+th {
+    background-color: rgba(255, 217, 0, 0.829);
+}
+
+td {
+   text-align: center;
+   position: relative;
+   overflow: auto;
+   background-color: rgba(229, 255, 0, 0.63);
+}
+
+table {
+    width: 100%;
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+canvas {
+    width: 100%;
+    height: 200px;
+}
+
+li {
+    text-align: left;
+}
+.container {
+    width: 100%;
+    height: 50vh;
+}

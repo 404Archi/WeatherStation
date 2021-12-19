@@ -1,0 +1,101 @@
+
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    	<title>Weather Monitoring Station</title>
+    	<link rel="stylesheet" href="style.css">
+
+		<style type="text/css">			
+			body{
+				font-family: Arial;
+			    margin: 80px 100px 10px 100px;
+			    padding: 0;
+			    color: white;
+			    text-align: center;
+			    background: #555652;
+			}
+
+			.container {
+				color: #E8E9EB;
+				background: #222;
+				border: #555652 1px solid;
+				padding: 10px;
+			}
+		</style>
+
+	</head>
+
+	<body onload="init()">
+    <header>
+        <h1>Weather Monitoring Station v1.0</h1>
+    </header>
+    <main>
+        <table>
+            <tr>
+                <th colspan=3>Current Readings</th>
+            </tr>
+			<tr>
+                <th colspan=3>Sensor 1</th>
+            </tr>
+			<tr>
+                <th>Temperature</th>
+                <th>Humidity</th>
+                <th>Pressure</th>
+            </tr>
+            <tr>
+                <td id="tempj">--&deg;</td>
+                <td id="humj">--%</td>
+                <td id="presj">--hPa</td>
+            </tr>
+		</table>
+		<table>
+			<tr>
+                <th colspan=3>Sensor 1</th>
+            </tr>
+            <tr>
+                <th>Temperature</th>
+                <th>Pressure</th>
+            </tr>
+            <tr>
+                <td id="tempd">--&deg;</td>
+                <td id="presd">--hPa</td>
+            </tr>
+
+            <!-- <tr>
+                <th colspan=3>Readings</th>
+            </tr> -->
+            <!-- <tr>
+                <td colspan=3><ul id="tempg"></ul></td>
+            </tr> -->
+        </table>
+
+
+	</main>
+	<h1>Temperature</h1>
+	    
+		<div class="container">	  
+			<canvas id="temper" style=" background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>
+		</div>
+		<h1>Humidity</h1> 
+		
+		<div class="container">	
+			<canvas id="humier" style="background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>	
+		</div>
+		<h1>Pressure</h1>   
+		
+		<div class="container">
+			<canvas id="preser" style="background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>	
+	    </div>
+		
+		
+		<footer>&copy; Marek Waluśkiewicz & Rafał Fieroch</footer>
+		<script src="js/main.js"></script>
+	</body>
+	
+</html>
